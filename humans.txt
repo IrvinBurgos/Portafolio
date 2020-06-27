@@ -1,0 +1,27 @@
+/* TEAM */
+
+Desarrollador: Irvin Burgos
+
+Correo: irvinburgos8 [at] gmail.com
+
+Facebook: https://www.facebook.com/irvin.94burgos
+
+Twitter: @IrvinBurgos94
+
+Ubicacion: San Salvador, El Salvador
+
+/* SITE */
+
+Sitio: http://irvinburgos.byethost17.com
+
+Idioma: Spanish
+
+Doctype: HTML5
+
+Estandares: HTML5, CSS3, Javascript
+
+Componentes: jQuery, EDgrid
+
+Software: Visual Studio Code, Google Chrome, Xampp, Filezilla
+
+Ultima actualizacion: 2019/06/23
