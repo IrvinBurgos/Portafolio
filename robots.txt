@@ -1,4 +1,266 @@
-User-Agent: *
-Disallow: 
+# -----------------
+# Bots generales
+# -----------------
+
+User-agent: *
+
+# ----------------------------------------
+# Permitir rastrear carpetas y archivos
+# ----------------------------------------
+
+Allow: /wp-admin/admin-ajax.php
+Allow: /wp-content/uploads/*
+Allow: /wp-content/*.css
+Allow: /wp-content/*.js
+Allow: /wp-content/*.ttf
+Allow: /wp-includes/*.css
+Allow: /wp-includes/*.js
+Allow: /wp-includes/*.ttf
+
+# ---------------------------
+# Evitar rastrear carpetas
+# ---------------------------
+
+Disallow: /wp-admin/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Disallow: /wp-includes/
+Disallow: /cgi-bin/
+
+# ---------------------------
+# Evitar rastrear archivos
+# ---------------------------
+
+Disallow: /index.php
+Disallow: /wp-config.php
+Disallow: /wp-login.php
+Disallow: /wp-mail.php
+Disallow: /wp-cron.php
+Disallow: /xmlrpc.php
+Disallow: /readme.html
+Disallow: /license.txt
+
+# --------------------------------------------------------------
+# Evitar rastrear archivos de copias de seguridad y registros
+# --------------------------------------------------------------
+
+Disallow: /*.git$
+Disallow: /*.sql$
+Disallow: /*.tgz$
+Disallow: /*.gz$
+Disallow: /*.tar$
+Disallow: /*.svn$
+Disallow: /*.bz2$
+Disallow: /*.log$
+
+# ------------------------------------
+# Evitar rastrear archivos adjuntos
+# ------------------------------------
+
+Disallow: /*/attachment/
+Disallow: /?attachment_id*
+
+# --------------------------------------
+# Evitar rastrear URLs con parámetros
+# --------------------------------------
+
+Disallow: /*?
+
+# ----------------------------
+# Evitar rastrear busquedas
+# ----------------------------
+
+Disallow: /?s=
+Disallow: /search
+
+# ---------------------------------------
+# Evitar rastrear páginas y paginación
+# ---------------------------------------
+
+Disallow: /author/
+Disallow: /page/
+Disallow: /tag/*/page/
+Disallow: /tag/*/feed/
+
+# -----------------------------------------------------------------------
+# Evitar rastrear de páginas de comentarios y respuestas a comentarios
+# -----------------------------------------------------------------------
+
+Disallow: /comments/
+Disallow: /comment-page-
+Disallow: /?replytocom
+
+# -----------------------------
+# Evitar rastrear trackbacks
+# -----------------------------
+
+Disallow: /trackback
+Disallow: /*trackback
+Disallow: /*trackback*
+Disallow: /*/trackback
+
+# ------------------------
+# Evitar rastrear feeds
+# ------------------------
+
+Allow: /feed/$
+Disallow: /feed/
+Disallow: /comments/feed/
+Disallow: /*/feed/$
+Disallow: /*/feed/rss/$
+Disallow: /*/trackback/$
+Disallow: /*/*/feed/$
+Disallow: /*/*/feed/rss/$
+Disallow: /*/*/trackback/$
+Disallow: /*/*/*/feed/$
+Disallow: /*/*/*/feed/rss/$
+Disallow: /*/*/*/trackback/$
+
+# ---------------------------------------------------
+# Evitar rastrear añadir al carrito de WooCommerce
+# ---------------------------------------------------
+
+Disallow: /*add-to-cart=*
+
+# -----------------------------------------
+# Evitar rastrear páginas de WooCommerce
+# -----------------------------------------
+
+Disallow: /carrito/
+Disallow: /finalizar-compra/
+Disallow: /mi-cuenta/
+
+# ------------------------------
+# Ralentizar bots específicos
+# ------------------------------
+
+User-agent: noxtrumbot
+Crawl-delay: 20
+
+User-agent: msnbot
+Crawl-delay: 20
+
+User-agent: Slurp
+Crawl-delay: 20
+
+# --------------------------------------------------
+# Permitir rastrear archivos con el bot de Google
+# --------------------------------------------------
+
+User-Agent: Googlebot
+Allow: /*.css$
+Allow: /*.js$
+
+# ----------------------------
+# Bloquear bots específicos
+# ----------------------------
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: duggmirror
+Disallow: /
+
+User-agent: MSIECrawler
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: Microsoft.URL.Control
+Disallow: /
+
+User-agent: libwww
+Disallow: /
+
+User-agent: Orthogaffe
+Disallow: /
+
+User-agent: UbiCrawler
+Disallow: /
+
+User-agent: DOC
+Disallow: /
+
+User-agent: Zao
+Disallow: /
+
+User-agent: sitecheck.internetseer.com
+Disallow: /
+
+User-agent: Zealbot
+Disallow: /
+
+User-agent: SiteSnagger
+Disallow: /
+
+User-agent: WebStripper
+Disallow: /
+
+User-agent: Fetch
+Disallow: /
+
+User-agent: Offline Explorer
+Disallow: /
+
+User-agent: Teleport
+Disallow: /
+
+User-agent: TeleportPro
+Disallow: /
+
+User-agent: WebZIP
+Disallow: /
+
+User-agent: linko
+Disallow: /
+
+User-agent: Xenu
+Disallow: /
+
+User-agent: larbin
+Disallow: /
+
+User-agent: ZyBORG
+Disallow: /
+
+User-agent: Download Ninja
+Disallow: /
+
+User-agent: wget
+Disallow: /
+
+User-agent: grub-client
+Disallow: /
+
+User-agent: k2spider
+Disallow: /
+
+User-agent: NPBot
+Disallow: /
+
+User-agent: WebReaper
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: GurujiBot
+Disallow: /
+
+User-agent: hl_ftien_spider
+Disallow: /
+
+User-agent: sogou spider
+Disallow: /
+
+User-agent: Yeti
+Disallow: /
+
+User-agent: YodaoBot
+Disallow: /
 
 Sitemap: http://irvinburgos.byethost17.com/sitemap.xml
